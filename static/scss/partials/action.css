@@ -1,0 +1,23 @@
+/* Error: This file is already being loaded.
+ *   ,--> ../helper/_text.scss
+ * 1 | @import "variables";
+ *   |         ^^^^^^^^^^^ new load
+ *   '
+ *   ,--> action.scss
+ * 1 | @import "../helper/variables";
+ *   |         ===================== original load
+ *   '
+ *   ../helper/_text.scss 1:9       @import
+ *   ../helper/_variables.scss 1:9  @import
+ *   action.scss 1:9                root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: This file is already being loaded.\a   \250c \2500 \2500 > ../helper/_text.scss\a 1 \2502  @import "variables";\a   \2502          ^^^^^^^^^^^ new load\a   \2575 \a   \250c \2500 \2500 > action.scss\a 1 \2502  @import "../helper/variables";\a   \2502          \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original load\a   \2575 \a   ../helper/_text.scss 1:9       @import\a   ../helper/_variables.scss 1:9  @import\a   action.scss 1:9                root stylesheet';
+}

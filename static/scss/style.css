@@ -1,0 +1,628 @@
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+body main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+body main section {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body main section form {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+body main section form h1 {
+  margin: 0;
+}
+body main section form legend {
+  position: relative;
+  margin: 1rem 0 1rem 0;
+  transition: 0.5s;
+}
+body main section form legend span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+body main section form legend span:hover {
+  color: #c00000;
+}
+body main section form legend span:hover + div.popup {
+  transition: 0.5s;
+  display: block;
+}
+body main section form .popup {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  color: white;
+  width: 35%;
+  background: #c00000;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  display: none;
+  transition: 1s;
+}
+body main section form h2 {
+  margin: 0;
+}
+body main section form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+body main section form fieldset .form-field {
+  display: flex;
+  flex-direction: column;
+}
+body main section form fieldset .form-field .field-error {
+  color: #c00000;
+  padding-bottom: 0.5rem;
+}
+body main section form fieldset .form-field input {
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem;
+}
+body main section form fieldset .form-field input:focus {
+  border: 2px solid #c00000;
+  outline: none;
+}
+body main section form fieldset .form-field textarea {
+  margin: 1rem 0 0.5rem 0;
+  width: 36.734rem;
+  height: 20vh;
+}
+body main section form fieldset .form-field textarea:focus {
+  outline: 2px solid #c00000;
+}
+@media (max-width: 768px) {
+  body main section form h1, body main section form legend {
+    text-align: center;
+  }
+  body main section form legend {
+    font-size: 1.3rem;
+  }
+  body main section form fieldset .form-field {
+    width: 100%;
+    align-items: center;
+  }
+  body main section form fieldset .form-field input {
+    width: 90%;
+  }
+  body main section form fieldset .form-field textarea {
+    width: 90%;
+  }
+}
+@media (max-width: 575px) {
+  body main section form legend {
+    font-size: 1rem;
+  }
+  body main section form fieldset .form-field label {
+    font-size: 1.2rem;
+  }
+}
+
+#button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  background: #700000;
+  background: linear-gradient(329deg, #c00000 0%, #700000 100%);
+  background-size: 300%;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+#button:hover {
+  animation: bloodyButton 2s infinite;
+}
+#button:active {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+#button:focus {
+  border: 2px solid #c00000;
+  outline: none;
+}
+@keyframes bloodyButton {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #700000;
+  }
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+  #form h1 {
+    position: relative;
+  }
+  #form h1 img {
+    position: absolute;
+    right: 3.5rem;
+    bottom: -5rem;
+    opacity: 0;
+    width: 25%;
+    cursor: pointer;
+    transition: 2s;
+  }
+  #form h1 img:hover {
+    opacity: 1;
+    bottom: -2rem;
+  }
+  .pinhead {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    transform: rotate(352deg);
+    width: 18%;
+    transition: 2s;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .cube {
+    position: absolute;
+    right: 10rem;
+    top: 10rem;
+    cursor: pointer;
+    width: 5%;
+    z-index: 10;
+  }
+  .cube:hover ~ .pinhead {
+    opacity: 1;
+  }
+  .cube:hover {
+    animation: shake 0.5s infinite;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(2px, 2px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-2px, -3px) rotate(-2deg);
+    }
+    20% {
+      transform: translate(-4px, 0px) rotate(2deg);
+    }
+    30% {
+      transform: translate(4px, 3px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-2px, 3px) rotate(-2deg);
+    }
+    60% {
+      transform: translate(-4px, 2px) rotate(0deg);
+    }
+    70% {
+      transform: translate(4px, 2px) rotate(-2deg);
+    }
+    80% {
+      transform: translate(-2px, -2px) rotate(2deg);
+    }
+    90% {
+      transform: translate(2px, 3px) rotate(0deg);
+    }
+    100% {
+      transform: translate(2px, -3px) rotate(-2deg);
+    }
+  }
+  .cube:hover .pinhead {
+    opacity: 1;
+  }
+  .alien {
+    position: absolute;
+    left: -11rem;
+    bottom: 1rem;
+    height: 60%;
+    cursor: pointer;
+    transition: 1s;
+    transform: rotate(30deg);
+  }
+  .alien:hover {
+    left: 0;
+    transform: rotate(0);
+  }
+  .valak {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    height: 50%;
+    cursor: pointer;
+    transition: 10s linear;
+    overflow: hidden;
+  }
+  .valak:hover {
+    transform: scale(2.5);
+  }
+}
+@media (max-width: 1200px) {
+  .pennywise, .cube, .pinhead, .alien, .valak {
+    display: none;
+  }
+}
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.follow-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+.follow-up .gif {
+  width: 30%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+@media (max-width: 1200px) {
+  .follow-up .gif {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .follow-up {
+    width: 90%;
+  }
+  .follow-up p {
+    font-size: 1.3rem;
+  }
+  .follow-up .gif {
+    width: 70%;
+  }
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+html {
+  background: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(106, 0, 0) 100%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow: hidden;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+h1, h2, label {
+  font-family: "Creepster", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+label, h2 {
+  font-size: 1.5rem;
+}
+
+p, legend, .popup {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+  color: white;
+}
+
+span {
+  color: #c00000;
+}
+
+input {
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

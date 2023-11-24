@@ -1,0 +1,31 @@
+@import "../helper/variables";
+@import "../helper/text";
+
+html {
+    background: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(106,0,0,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow: hidden;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "../helper/variables";
+@import "../helper/text";
+
+.follow-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+
+    .gif {
+        width: 30%;
+        height: auto;
+        margin-bottom: 1rem;
+
+        @media (max-width: 1200px) {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        width: 90%;
+        p {
+            font-size: 1.3rem;
+        }
+
+        .gif {
+            width: 70%;
+        }
+    }
+}

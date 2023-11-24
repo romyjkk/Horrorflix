@@ -1,0 +1,194 @@
+@import "../helper/variables";
+@import "../helper/text";
+
+body {
+    main {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+
+        section {
+            margin-top: auto;
+            margin-bottom: auto;
+            form {
+                display: inline-flex;
+                flex-direction: column;
+                max-width: 100%;
+
+                h1 {
+                    margin: 0;
+                }
+
+                legend {
+                    position: relative;
+                    margin: 1rem 0 1rem 0;
+                    transition: .5s;
+
+                    span {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        color: white;
+
+                        &:hover {
+                            color: $secondary-text-color;
+                        }
+
+                        &:hover + div.popup {
+                            transition: .5s;
+                            display: block;
+                        }
+                    }
+                }
+
+                .popup {
+                    position: absolute;
+                    top: 2rem;
+                    right: 1rem;
+                    color: white;
+                    width: 35%;
+                    background: $light-element-color;
+                    padding: .5rem 1rem .5rem 1rem;
+                    display: none;
+                    transition: 1s;
+                }
+
+
+                h2 {
+                    margin: 0;
+                }
+
+                fieldset {
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+
+                    .form-field {
+                        display: flex;
+                        flex-direction: column;
+
+                        .field-error {
+                            color: $secondary-text-color;
+                            padding-bottom: .5rem;
+                        }
+
+                        input {
+                            margin: 1rem 0 1rem 0;
+                            padding: .5rem;
+
+                            &:focus {
+                                border: 2px solid $light-element-color;
+                                outline: none;
+                            }
+                        }
+
+                        textarea {
+                            margin: 1rem 0 .5rem 0;
+                            width: 36.734rem;
+                            height: 20vh;
+
+                            &:focus {
+                                outline: 2px solid $light-element-color;
+                            }
+
+                        }
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    h1, legend {
+                        text-align: center;
+                    }
+
+                    legend {
+                        font-size: 1.3rem;
+                    }
+
+                    fieldset {
+                        .form-field {
+                            width: 100%;
+                            align-items: center;
+
+                            input {
+                                width: 90%;
+                            }
+
+                            textarea {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: 575px) {
+                    legend {
+                        font-size: 1rem;
+                    }
+
+                    fieldset {
+                        .form-field {
+                            label {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// button
+
+#button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+    padding: .5rem 1rem .5rem 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    background: $dark-element-color;
+    background: linear-gradient(329deg, $light-element-color 0%, $dark-element-color 100%);
+    background-size: 300%;
+    color: $primary-text-color;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        animation: bloodyButton 2s infinite;
+    }
+
+    &:active {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2em transparent;
+    }
+
+    &:focus {
+        border: 2px solid $light-element-color;
+        outline: none;
+    }
+
+
+    @keyframes bloodyButton {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 $dark-element-color;
+        }
+    }
+}

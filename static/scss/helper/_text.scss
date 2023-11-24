@@ -1,0 +1,32 @@
+//@import "variables";
+
+h1, h2, label {
+    font-family: 'Creepster', cursive;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+label, h2 {
+    font-size: 1.5rem;
+}
+
+p, legend, .popup {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+h1, h2, label, p, legend {
+    color: white;
+}
+
+span {
+    color: #C00000FF;
+}
+
+input {
+    background: white;
+    color: black;
+    font-size: 1rem;
+}
